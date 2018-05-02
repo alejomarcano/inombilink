@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 
+
 // Componentes
 import { DashnoardComponent } from './dashnoard/dashnoard.component';
 import { ProgressComponent } from './progress/progress.component';
@@ -9,9 +10,14 @@ import { PagesComponent } from './pages.component';
 
 // Modulos
 import { SharedModule } from '../shared/shared.module';
+import { FormsModule } from '@angular/forms';
 
 // Rutas
 import { PAGES_ROUTES } from './pages.routes';
+
+
+// Temporal
+import { IncrementadorComponent } from '../comporeutilizados/incrementador/incrementador.component';
 
 // modulo que tiene referencia a las paginas principales
 
@@ -20,7 +26,8 @@ import { PAGES_ROUTES } from './pages.routes';
         PagesComponent,
    DashnoardComponent,
     ProgressComponent,
-   Graficas1Component
+   Graficas1Component,
+   IncrementadorComponent
     ],
     exports: [
         DashnoardComponent,
@@ -30,7 +37,9 @@ import { PAGES_ROUTES } from './pages.routes';
 
     imports: [
         SharedModule,
-        PAGES_ROUTES
+        PAGES_ROUTES,
+        FormsModule
+
     ],
 
 })
