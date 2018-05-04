@@ -15,9 +15,15 @@ import { FormsModule } from '@angular/forms';
 // Rutas
 import { PAGES_ROUTES } from './pages.routes';
 
+// Grafica
+import { ChartsModule } from 'ng2-charts';
+
+
 
 // Temporal
 import { IncrementadorComponent } from '../comporeutilizados/incrementador/incrementador.component';
+import { GraficoDonaComponent } from '../comporeutilizados/grafico-dona/grafico-dona.component';
+
 
 // modulo que tiene referencia a las paginas principales
 
@@ -27,7 +33,8 @@ import { IncrementadorComponent } from '../comporeutilizados/incrementador/incre
    DashnoardComponent,
     ProgressComponent,
    Graficas1Component,
-   IncrementadorComponent
+   IncrementadorComponent,
+   GraficoDonaComponent
     ],
     exports: [
         DashnoardComponent,
@@ -38,7 +45,8 @@ import { IncrementadorComponent } from '../comporeutilizados/incrementador/incre
     imports: [
         SharedModule,
         PAGES_ROUTES,
-        FormsModule
+        FormsModule,
+        ChartsModule
 
     ],
 
