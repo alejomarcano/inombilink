@@ -18,23 +18,49 @@ import { PAGES_ROUTES } from './pages.routes';
 // Grafica
 import { ChartsModule } from 'ng2-charts';
 
-
+import { AccoutSettingsComponent } from './accout-settings/accout-settings.component';
 
 // Temporal
 import { IncrementadorComponent } from '../comporeutilizados/incrementador/incrementador.component';
 import { GraficoDonaComponent } from '../comporeutilizados/grafico-dona/grafico-dona.component';
+import { AmigosComponent } from './amigos/amigos.component';
+import { InmuebleComponent } from './inmueble/inmueble.component';
+import { InmueblesvendidosComponent } from './inmueblesvendidos/inmueblesvendidos.component';
+import { MarcadosComponent } from './marcados/marcados.component';
+import { RegistrocompradorComponent } from './registrocomprador/registrocomprador.component';
+import { RegistroduenoComponent } from './registrodueno/registrodueno.component';
+import { RegistroinmuebleComponent } from './registroinmueble/registroinmueble.component';
+import { VistamisinmueblesComponent } from './vistamisinmuebles/vistamisinmuebles.component';
+import { VistaclientesComponent } from './vistaclientes/vistaclientes.component';
+import { VistacompradoresComponent } from './vistacompradores/vistacompradores.component';
+
 
 
 // modulo que tiene referencia a las paginas principales
 
 @NgModule({
     declarations: [
-        PagesComponent,
+    PagesComponent,
    DashnoardComponent,
     ProgressComponent,
    Graficas1Component,
    IncrementadorComponent,
-   GraficoDonaComponent
+   GraficoDonaComponent,
+   AccoutSettingsComponent,
+
+   // Paginas primera entrega
+
+   AmigosComponent,
+   InmuebleComponent,
+   InmueblesvendidosComponent,
+   MarcadosComponent,
+   RegistrocompradorComponent,
+   RegistroduenoComponent,
+   RegistroinmuebleComponent,
+   VistamisinmueblesComponent,
+   VistaclientesComponent,
+   VistacompradoresComponent
+
     ],
     exports: [
         DashnoardComponent,
