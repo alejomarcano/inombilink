@@ -5,11 +5,13 @@
     "scripts": {
         "ng": "ng",
         "start": "node server.js",
-        "build": "ng build",
+        "build": "ng build --prod",
         "test": "ng test",
         "lint": "ng lint",
         "e2e": "ng e2e",
-        "postinstall": "ng build --aot --target=production"
+        "postinstall": "ng build --aot -prod"
+
+
     },
     "private": true,
     "dependencies": {
@@ -30,8 +32,8 @@
         "ng2-charts": "^1.6.0",
         "path": "^0.12.7",
         "rxjs": "^5.5.6",
-        "typescript": "~2.5.3",
-        "zone.js": "^0.8.19"
+        "zone.js": "^0.8.19",
+        "typescript": "~2.5.3"
     },
     "devDependencies": {
         "@angular/language-service": "^5.2.0",
